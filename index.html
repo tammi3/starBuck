@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Website Landing Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="vue-app">
+      <div class="circle"></div>
+      <header>
+        <a href="#" class="logo"><img src="imgs/logo.png" alt="" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>It's not just coffee <br />It's <span>Starbucks</span></h2>
+          <p>
+            Duis ac diam at lectus pretium mollis. In hac habitasse platea
+            dictumst. Curabitur nibh nunc, posuere in urna vitae,
+            scelerisque.Duis ac diam at lectus pretium mollis. In hac habitasse
+            platea dictumst. Curabitur nibh nunc, posuere in urna vitae,
+            scelerisque.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img src="imgs/img1.png" alt="" class="starbucks" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img src="imgs/thumb1.png" v-on:click="imgSlider('imgs/img1.png','#017143')" />
+        </li>
+        <li>
+          <img src="imgs/thumb2.png" v-on:click="imgSlider('imgs/img2.png','#eb7495')" />
+        </li>
+        <li>
+          <img src="imgs/thumb3.png" v-on:click="imgSlider('imgs/img3.png','#d752b1')" />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="imgs/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/instagram.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <script src="app.js">
+      
+    </script>
+  </body>
+</html>
